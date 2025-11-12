@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>SkuSuks Apparel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/skusuks_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Serif+Display&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Workaround for fixed background image across multiple OS's -->
+    <div class="bg-fixed"></div>
+    <script src="scripts/skusuks.js"></script>
+    <header>
+      <!-- Container for the top nav -->
+      <div class="top-nav">
+        <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="30" height="30" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none">
+            <line x1="5" y1="7" x2="19" y2="7"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <line x1="5" y1="17" x2="19" y2="17"></line>
+          </svg>
+        </button>
+
+        <!-- Hero Image -->
+        <div class="logo">
+          <a href="index.html">
+            <img id="hero" src="images/skusuks-hero-image.png" alt="SkuSuks hero image.">
+          </a>
+        </div>
+
+        <!-- Shopping Cart Icon -->
+        <div class="cart">
+          <a href="cart.html">
+            <svg viewBox="0 0 512 512" width="30" height="30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.10542736e-15,-1.42108547e-14 L70.3622093,-1.42108547e-14 L89.7493333,85.3333333 L378.389061,85.3333333 L337.246204,277.333333 L89.6377907,277.333333 L36.288,42.6666667 L7.10542736e-15,42.6666667 L7.10542736e-15,-1.42108547e-14 Z M325.610667,128 L99.456,128 L123.690667,234.666667 L302.741333,234.666667 L325.610667,128 Z M138.666667,384 C156.339779,384 170.666667,369.673112 170.666667,352 C170.666667,334.326888 156.339779,320 138.666667,320 C120.993555,320 106.666667,334.326888 106.666667,352 C106.666667,369.673112 120.993555,384 138.666667,384 Z M288,384 C305.673112,384 320,369.673112 320,352 C320,334.326888 305.673112,320 288,320 C270.326888,320 256,334.326888 256,352 C256,369.673112 270.326888,384 288,384 Z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation Links (hidden by default) -->
+      <nav class="nav-menu" hidden>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="apparel.html">Apparel</a></li>
+          <li><a href="accessories.html">Accessories</a></li>
+          <li><a href="#">New Drops / Pre Orders</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Donate</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Product Carousel Placeholder -->
+       <section class="product-carousel">
+        <div class="carousel-track">
+          <div class="carousel-item">
+            <img src="" alt="Product 1">
+          </div>
+          <div class="carousel-item">
+            <img src="" alt="Product 2">
+          </div>
+          <div class="carousel-item">
+            <img src="" alt="Product 3">
+          </div>
+        </div>
+       </section>
+
+       <!-- Mission Statement -->
+      <div class="mission">
+        <div class="mission-statement-container">
+          <p>A place where the youth can grow.</p> 
+          <p>A safe place for youth to learn helpful tools in life.</p> 
+          <p>A brand dedicated to giving that to our youth.</p> 
+          <p>A dream that our future won't be helpless.</p> 
+          <p>A goal that parents can feel at ease, where their children will be alright.</p>
+          <p>Our goal is not to put down the system. We want our children to chase their dreams, not just fall in line. Teach the youth to ask questions. Getting them to retain information. Become leaders not followers.</p>
+          <p>10% of all purchases will go to funding these goals for our youth.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <h2>Like, Follow, &amp; Share!</h2>
+      <div id="socials">
+        <!-- Attach links for socials within a tags -->
+        <a href="" target="_blank"><svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="facebook-icon">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M23 12.0672C23 5.95496 18.0751 1 12 1C5.92486 1 1 5.95496 1 12.0672C1 17.5912 5.02254 22.1697 10.2812 23V15.2663H7.48828V12.0672H10.2812V9.62898C10.2812 6.85525 11.9235 5.32313 14.4361 5.32313C15.6396 5.32313 16.8984 5.53929 16.8984 5.53929V8.26287H15.5114C14.1449 8.26287 13.7188 9.11597 13.7188 9.99119V12.0672H16.7695L16.2818 15.2663H13.7188V23C18.9775 22.1697 23 17.5912 23 12.0672Z" fill=""/>
+        </svg></a>
+        <a href="" target="_blank"><svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="instagram-icon">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill=""/>
+          <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill=""/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill=""/>
+        </svg></a> 
+        <a href="" target="_blank"><svg width="100px" height="100px" viewBox="0 0 1200 1227" fill="" xmlns="http://www.w3.org/2000/svg" id="x-icon">
+          <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill=""/>
+        </svg></a>  
+      </div>
+      <p>&copy; 2025 SkuSuks. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
