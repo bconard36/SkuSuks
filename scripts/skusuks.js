@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalPrice = document.getElementById("modal-product-price");
   const closeButton = document.querySelector(".close-button");
 
+  // Exit early if there is no modal on this page 
+  if (!modal || !closeButton) return;
+
   document.querySelectorAll(".order-button").forEach(button => {
     button.addEventListener("click", (event) => {
       const productCard = event.target.closest(".product"); // Container above the button 
@@ -49,6 +52,19 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const cartCountBadge = document.getElementById("cart-count");
 
+    // Only run if the cart badge exists on this page 
+    if (!cartCountBadge) return;
+
+    // Update the badge number in nav bar 
+  function updateCartBadge() {
+    const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
+    const totalQty = storedCart.reduce((sum, item) => sum + item.quantity, 0);
+    cartCountBadge.textContent = totalQty;
+    cartCountBadge.hidden = totalQty === 0;
+  }
+
+  updateCartBadge();
+
   // Add or replace the quantity for an item 
   function addToCart(product) {
     const existingCart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -64,30 +80,23 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCartBadge();
   }
 
-  // Update the badge number in nav bar 
-  function updateCartBadge() {
-    const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
-    const totalQty = storedCart.reduce((sum, item) => sum + item.quantity, 0);
-    cartCountBadge.textContent = totalQty;
-    cartCountBadge.hidden = totalQty === 0;
-  }
-
-// Initialize badge on page load
-updateCartBadge();
 
   // Add to Cart Button Handler 
-  document.getElementById("add-to-cart-button").addEventListener("click", () => {
-    const quantity = Number(document.getElementById("modal-product-quantity").value) || 1;
-    const productName = document.getElementById("modal-product-name").textContent;
-    const price = document.getElementById("modal-product-price").textContent;
-    const size = document.getElementById("modal-product-size")?.value || "default";
-    const productId = `${productName.toLowerCase().replace(/\s+/g, "-")}-${size}`; 
-    const productImg = document.getElementById("modal-product-image").src;
+  const addToCartButton = document.getElementById("add-to-cart-button");
+  if (addToCartButton) {
+    addToCartButton.addEventListener("click", () => {
+      const quantity = Number(document.getElementById("modal-product-quantity").value) || 1;
+      const productName = document.getElementById("modal-product-name").textContent;
+      const price = document.getElementById("modal-product-price").textContent;
+      const size = document.getElementById("modal-product-size")?.value || "default";
+      const productId = `${productName.toLowerCase().replace(/\s+/g, "-")}-${size}`; 
+      const productImg = document.getElementById("modal-product-image").src;
 
-    addToCart({id: productId, name: productName, price, quantity, size, img: productImg});
+      addToCart({id: productId, name: productName, price, quantity, size, img: productImg});
 
-    document.getElementById("modal-product-quantity").value = "1";
-  });
+      document.getElementById("modal-product-quantity").value = "1";
+    });
+  }
 })
 
 // Cart Page Logic and Functionality (robust remove handler)
@@ -189,6 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Event Listener for Contact Form Submission (Temporary FrontEnd Behavior)
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.contact-form');
+  if (!form) return;
 
   form.addEventListener('submit', (event) => {
     event.preventDefault(); // Prevent page reload for now 
@@ -202,6 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Auto-format phone number in contact form 
 document.addEventListener('DOMContentLoaded', () => {
   const phoneInput = document.getElementById('phone');
+  if (!phoneInput) return;
 
   phoneInput.addEventListener('input', (event) => {
   let value = event.target.value.replace(/\D/g, ''); // Only digits 
