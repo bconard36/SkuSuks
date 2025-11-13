@@ -24,28 +24,51 @@
 
 /* Font Style & Size Rules */
 h1, h2, h3, #contact-header {
-  font-family: "Gravitas One", sans-serif;
-  font-weight: normal;
+  font-family: "Gravitas One", serif;
 }
 
-body, p, label, input, textarea, button {
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 400;
+body {
+  font-family: "Libertinus Serif Display", serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h2, h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 
 p {
   font-size: 1rem;
 }
 
+button {
+  font-family: "Libertinus Serif Display", serif;
+}
+
 /* Style Rules for Mobile Viewport */
 
 /* Style Rules for Navigation Area */
+/* Header */
+header {
+  padding-top: 80px;
+}
+
 /* Top Nav Container */
 .top-nav {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -178,7 +201,7 @@ main {
   object-fit: contain;
 }
 
-/* Mission Statement */
+/* Style Rules for Mission Statement Section */
 .mission {
   display: flex;
   justify-content: center; 
@@ -194,7 +217,8 @@ main {
 }
 
 .mission-statement-container p {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: 300;
   color: #FFF;
   text-align: center;
   padding: 20px 30px;
@@ -212,7 +236,9 @@ main {
 
 #apparel-header, #accessory-header {
   color: #FFF;
+  font-size: 1.25rem;
   text-align: center;
+  margin: 0 auto;
 }
 
 .apparel-container h3, .accessory-container h3 {
@@ -224,8 +250,10 @@ main {
 
 .apparel-header-container, .accessory-header-container {
   background: #000;
-  width: 50%;
+  max-width: 400px;
+  width: 90%;
   margin: 0 auto;
+  border-radius: 8px;
 }
 
 .product-placeholder {
@@ -445,7 +473,7 @@ main {
   background-color: #035F9B;
 }
 
-/* Style Rules for Contact */
+/* Style Rules for Contact Section */
 #contact-header {
   color: #FFF;
   text-align: center;
@@ -541,8 +569,15 @@ footer {
 
 footer h2 {
   color: #FFF;
+  font-size: 1rem;
+  font-weight: 400;
   text-align: center;
   padding-top: 2%;
+}
+
+footer p {
+  font-size: 0.75rem;
+  font-weight: 300;
 }
 
 #socials {
@@ -558,7 +593,8 @@ footer h2 {
 #socials svg {
   fill: #FFF;
   max-width: 80px;
-  width: 20vw;
+  width: 15vw;
+  max-width: 50px;
   height: auto;
   cursor: pointer;
 }
@@ -575,4 +611,45 @@ footer p {
   margin: 5px auto;
   padding-top: 5px;
   padding-bottom: 10px;
+}
+
+/* Style Rules for Desktop Viewport */
+@media (min-width: 900px) {
+  /* Font Style Rules for Body and Headers */
+  body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  h2, h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  /* Style Rules for Mission Statement Section */
+  .mission-statement-container p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Style Rules for Footer Section */
+  footer h2 {
+    font-size: 1.25rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  #socials svg {
+    width: 5vw;
+    max-width: 75px;
+  }
 }
