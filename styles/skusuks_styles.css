@@ -122,13 +122,17 @@ header {
 }
 
 .nav-menu {
-  position: relative;
+  position: fixed;
+  top: 65px;
+  left: 0;
+  width: 80%;
   background-color: #000;
   border-radius: 0 0 8px 8px;
   padding: 10px 15px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  z-index: 9;
 }
 
 .nav-menu[hidden] {
@@ -236,7 +240,6 @@ main {
 
 #apparel-header, #accessory-header {
   color: #FFF;
-  font-size: 1.25rem;
   text-align: center;
   margin: 0 auto;
 }
@@ -375,7 +378,8 @@ main {
 
 .cart-header-container {
   background: #000;
-  width: 50%;
+  max-width: 400px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -447,7 +451,8 @@ main {
 
 .empty-cart-message-container {
   background: #000;
-  width: 20%;
+  width: 90%;
+  max-width: 300px;
   margin: 0 auto;
 }
 
@@ -637,6 +642,11 @@ footer p {
     font-weight: 400;
     max-width: 800px;
     margin: 0 auto;
+  }
+
+  /* Style Rules for Apparel/Accessories */
+  .apparel-container h3, .accessory-container h3 {
+    font-size: 1.5rem;
   }
 
   /* Style Rules for Footer Section */
