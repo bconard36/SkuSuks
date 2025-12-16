@@ -1,0 +1,80 @@
+/* Style Rules for Shopping Cart */
+#cart-header {
+  color: #FFF;
+  background: #000;
+  padding: 20px 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.cart-header-container {
+  background: #000;
+  max-width: 400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cart-item-modal {
+  background: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.cart-item-modal img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.cart-item-selects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.cart-item-selects label {
+  font-size: 0.9rem;
+}
+
+.cart-close-button {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.cart-close-button:hover {
+  color: #000;
+}
+
+.cart-actions {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.empty-cart-message-container {
+  background: #000;
+  width: 90%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.empty-cart-message {
+  text-align: center;
+  color: #FFF;
+  margin-top: 20px;
+  font-size: 2rem;
+}
