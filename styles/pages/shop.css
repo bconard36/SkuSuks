@@ -41,20 +41,20 @@
   align-items: center;
 }
 
-#apparel-header, #accessory-header {
+#apparel-header, #accessory-header, #new-drop-header, #pre-order-header {
   color: #FFF;
   text-align: center;
   margin: 0 auto;
 }
 
-.apparel-container h3, .accessory-container h3 {
+.header-container h3 {
   color: #FFF;
   background: #000;
   padding: 20px 20px;
   border-radius: 4px;
 }
 
-.apparel-header-container, .accessory-header-container {
+.header-container {
   background: #000;
   max-width: 400px;
   width: 90%;
