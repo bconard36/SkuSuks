@@ -67,7 +67,7 @@
 
 .empty-cart-message-container {
   background: #000;
-  width: 90%;
+  width: 50%;
   max-width: 300px;
   margin: 0 auto;
 }
@@ -76,5 +76,5 @@
   text-align: center;
   color: #FFF;
   margin-top: 20px;
-  font-size: 2rem;
+  font-size: 1rem;
 }
