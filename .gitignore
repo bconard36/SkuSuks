@@ -1,0 +1,21 @@
+# Node modules (common for Node projects)
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Environment variables (NEVER push secrets)
+.env
+
+# VS Code settings
+.vscode/
+
+# Build outputs
+dist/
+build/
