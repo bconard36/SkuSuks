@@ -28,8 +28,8 @@
 }
 
 .carousel-image {
-  width: 100%;
-  height: auto;
+  width: 50%;
+  height: 50%;
   display: block;
   object-fit: cover;
 }
