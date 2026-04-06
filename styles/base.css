@@ -27,7 +27,6 @@
 html, body {
   min-height: 100vh;
   min-height: 100dvh; /* For mobile viewport height issues, specifically iOS */
-  background-color: #000;
 }
 
 body {
