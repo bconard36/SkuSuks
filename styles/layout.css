@@ -19,12 +19,43 @@
   object-fit: contain;
 }
 
+/* Hamburger Icon */
+.top-nav .nav-toggle {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  /* iOS Safari tap highlight fix */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  touch-action: manipulation;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-nav .nav-toggle svg {
+  width: 30px;
+  height: 30px;
+  stroke: #FFF;
+  fill: none;
+  pointer-events: none;
+}
+
 /* Cart Icon */
 .top-nav .cart {
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* iOS Safari tap highlight fix */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  touch-action: manipulation;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .cart {
@@ -40,22 +71,7 @@
   fill: white;
   stroke: white;
   transform: translateY(4.5px);
-}
-
-/* Hamburger Icon */
-.top-nav .nav-toggle {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
-.top-nav .nav-toggle svg {
-  width: 30px;
-  height: 30px;
-  stroke: #FFF;
-  fill: none;
-  cursor: pointer;
+  pointer-events: none;
 }
 
 .nav-menu {
