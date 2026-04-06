@@ -146,6 +146,7 @@ button {
   display: block;
   object-fit: cover;
   border-radius: 8px;
+  padding: 10px;
 }
 
 
