@@ -94,8 +94,19 @@ button {
 }
 
 /* Media Queries */
+/* Style Rules for Tablet Viewport */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Style Rules for Mission Statement Section */
+  .mission-statement-container p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
 /* Style Rules for Desktop Viewport */
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   /* Font Style Rules for Body and Headers */
   body {
     font-size: 1rem;

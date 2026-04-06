@@ -77,8 +77,11 @@
   margin: 25px auto;
 }
 
+/* Style Rules for Tablet Viewport */
+@media (min-width: 768px) and (max-width: 1023px) {}
+
 /* Style Rules for Desktop Viewport */
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   .apparel-container, .accessory-container {
     flex-direction: column;
     gap: 20px;
