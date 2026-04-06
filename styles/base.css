@@ -41,6 +41,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   padding-bottom: env(safe-area-inset-bottom);
   background-image: url("../images/cropped-inverted-skusuks-logo.png");
+  background-repeat: repeat;
+  background-position: top left;
+  background-size: 100px 100px;
+  pointer-events: none;
 }
 
 main {
