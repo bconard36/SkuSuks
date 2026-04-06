@@ -259,9 +259,15 @@ main {
   border-radius: 8px;
 }
 
-.product-image {
+.product-image-container {
+  border-radius: 8px;
   height: 200px;
   width: 200px;
+}
+
+.product-image {
+  height: 100%;
+  width: 100%;
   margin: 25px auto;
 }
 
@@ -646,6 +652,19 @@ footer p {
   /* Style Rules for Apparel/Accessories */
   .apparel-container h3, .accessory-container h3 {
     font-size: 1.5rem;
+  }
+
+  .product-image-container {
+    border-radius: 8px;
+    height: 400px;
+    width: 400px;
+    padding: 30px;
+  }
+
+  .product-image {
+    height: 100%;
+    width: 100%;
+    margin: 25px auto;
   }
 
   /* Style Rules for Footer Section */
