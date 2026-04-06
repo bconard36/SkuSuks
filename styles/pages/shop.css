@@ -66,13 +66,40 @@
 
 .product-image-container {
   border-radius: 8px;
-  height: 400px;
-  width: 400px;
-  padding: 30px;
+  height: 200px;
+  width: 200px;
+  padding: 20px;
 }
 
 .product-image {
   height: 100%;
   width: 100%;
   margin: 25px auto;
+}
+
+/* Style Rules for Desktop Viewport */
+@media (min-width: 900px) {
+  .apparel-container, .accessory-container {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .product-image-container {
+    height: 400px;
+    width: 400px;
+    padding: 30px;
+  }
+
+  .product-carousel {
+    width: 80%;
+  }
+
+  .carousel-item {
+    width: 400px;
+  }
+
+  .carousel-image {
+    height: 100%;
+    width: 100%;
+  }
 }
