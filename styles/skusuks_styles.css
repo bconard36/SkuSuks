@@ -199,8 +199,8 @@ main {
 }
 
 .carousel-image {
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   display: block;
   object-fit: contain;
 }
@@ -259,10 +259,9 @@ main {
   border-radius: 8px;
 }
 
-.product-placeholder {
+.product-image {
   height: 200px;
   width: 200px;
-  background-color: #dfdfe2;
   margin: 25px auto;
 }
 
