@@ -80,7 +80,7 @@
 /* Style Rules for Desktop Viewport */
 @media (min-width: 900px) {
   .apparel-container, .accessory-container {
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
   }
 
