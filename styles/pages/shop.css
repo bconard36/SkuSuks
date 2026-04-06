@@ -1,6 +1,6 @@
 /* Product Carousel */
 .product-carousel {
-  width: 100%;
+  width: 90%;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
@@ -26,9 +26,9 @@
   padding: 20px;
 }
 
-.carousel-item img {
-  width: 100%;
-  height: auto;
+.carousel-image {
+  width: 200px;
+  height: 200px;
   display: block;
   object-fit: contain;
 }
