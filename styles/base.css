@@ -95,32 +95,49 @@ button {
 
 /* Style Rules for Product Image Carousel */
 .product-carousel {
-  width: 90%;
+  width: 300px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   padding: 10px 0;
   min-height: 20vh;
   max-height: 50vh;
-  max-width: 700px;
   margin: 0 auto;
+}
+
+/* Hide scrollbar while keeping scroll functionality */
+.product-carousel::-webkit-scrollbar {
+  height: 4px;
+}
+
+.product-carousel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.product-carousel::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.product-carousel::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .carousel-track {
   display: flex;
-  gap: 10px;
+  gap: 0;
   align-items: center;
 }
 
 .carousel-item {
-  flex: 0 0 auto;
+  flex: 0 0 300px;
   width: 300px;
-  max-width: 100%;
-  border-radius: 8px;
-  background-color: #f0f0f0;
   display: flex;
   justify-content: center;
   align-items: center;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 
 .carousel-image {
@@ -128,6 +145,7 @@ button {
   height: auto;
   display: block;
   object-fit: cover;
+  border-radius: 8px;
 }
 
 
