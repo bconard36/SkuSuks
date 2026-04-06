@@ -91,10 +91,6 @@
   }
 
   .product-carousel {
-    width: 80%;
-  }
-
-  .carousel-item {
-    width: 400px;
+    max-width: 800px;
   }
 }
