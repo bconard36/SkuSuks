@@ -71,35 +71,24 @@
 /* Donate Button */
 /* From Uiverse.io by Allyhere - Monochrome variant */ 
 .btn-donate, #continue-shopping {
-  --clr-font-main: hsla(0 0% 10% / 100%);
-  --btn-bg-1: hsla(0 0% 25% / 1);   /* dark gray */
-  --btn-bg-2: hsla(0 0% 10% / 1);   /* near-black */
-  --btn-bg-color: hsla(0 0% 100% / 1); /* white text */
-  --radii: 0.5em;
-
   cursor: pointer;
   padding: 0.9em 1.4em;
   margin: 0 auto;
   min-width: 120px;
   min-height: 44px;
-  font-size: var(--size, 1rem);
+  font-size: 1rem;
   font-weight: bold;
   transition: 0.8s;
   background-size: 280% auto;
   background-image: linear-gradient(
     325deg,
-    var(--btn-bg-2) 0%,
-    var(--btn-bg-1) 55%,
-    var(--btn-bg-2) 90%
+    #0F0F0F 0%,
+    #3B3B3B 55%,
+    #0F0F0F 90%
   );
   border: none;
-  border-radius: var(--radii);
-  color: var(--btn-bg-color);
-  box-shadow:
-    0px 0px 16px rgba(0, 0, 0, 0.6),
-    0px 4px 4px -1px rgba(0, 0, 0, 0.4),
-    inset 3px 3px 6px rgba(255, 255, 255, 0.15),
-    inset -3px -3px 6px rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  color: #FFF;
 }
 
 .btn-donate:hover {
