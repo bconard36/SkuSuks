@@ -68,11 +68,10 @@
   background-color: #CCC;
 }
 
-/* Donate Button */
-/* From Uiverse.io by Allyhere - Monochrome variant */ 
+/* Donate and Continue Shopping Buttons */
 .btn-donate, #continue-shopping {
   cursor: pointer;
-  padding: 0.9em 1.4em;
+  padding: 5px 10px;
   margin: 0 auto;
   min-width: 120px;
   min-height: 44px;
@@ -91,31 +90,12 @@
   color: #FFF;
 }
 
-.btn-donate:hover {
-  background-position: right top;
-}
-
-.btn-donate:is(:focus, :focus-visible, :active) {
-  outline: none;
-  box-shadow:
-    0 0 0 2px #ffffff,
-    0 0 0 5px #000000;
-}
-
 .donate-button-container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .btn-donate {
-    transition: linear;
-  }
-}
-
-
 
 /* Modals */
 .modal {
