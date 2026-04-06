@@ -62,9 +62,15 @@
   border-radius: 8px;
 }
 
-.product-placeholder {
-  height: 200px;
-  width: 200px;
-  background-color: #dfdfe2;
+.product-image-container {
+  border-radius: 8px;
+  height: 400px;
+  width: 400px;
+  padding: 30px;
+}
+
+.product-image {
+  height: 100%;
+  width: 100%;
   margin: 25px auto;
 }
