@@ -45,11 +45,13 @@ const initImageCycler = () => {
     })
   }
 
+  // Next Image Logic (right arrow)
   const goToNext = () => {
     currentIndex = (currentIndex + 1) % carouselItems.length;
     scrollToImage(currentIndex);
   }
 
+  // Previous Image Logic (left arrow)
   const goPrev = () => {
     currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
     scrollToImage(currentIndex);
