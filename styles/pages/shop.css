@@ -4,6 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+  width: 100%;
 }
 
 #apparel-header, #accessory-header, #new-drop-header, #pre-order-header {
@@ -38,21 +40,51 @@
   height: 100%;
   width: 100%;
   margin: 25px auto;
+  border-radius: 8px;
 }
 
 /* Style Rules for Tablet Viewport */
-@media (min-width: 768px) and (max-width: 1023px) {}
+@media (min-width: 768px) {
+  .apparel-container, .accessory-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: min(90vw, 1000px);
+    margin: 0 auto;
+  }
+
+  .product {
+    flex: 1 1 300px;
+    max-width: 340px;
+  }
+
+  .product-image-container {
+    height: 260px;
+    width: 260px;
+    padding: 24px;
+  }
+}
 
 /* Style Rules for Desktop Viewport */
 @media (min-width: 1024px) {
   .apparel-container, .accessory-container {
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: min(90vw, 1200px);
+    margin: 0 auto;
+  }
+
+  .product {
+    flex: 1 1 30%;
+    max-width: 360px;
   }
 
   .product-image-container {
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     padding: 30px;
   }
 
