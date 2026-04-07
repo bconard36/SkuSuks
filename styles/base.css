@@ -100,73 +100,11 @@ button {
   font-weight: normal;
 }
 
-/* Style Rules for Donate Page */
-.donate-hero-image-container {
-  max-width: 400px;
-  width: 90%;
-  margin: 20px auto;
-}
-
-.donate-hero-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.donate-header-container {
-  background: #000;
-  max-width: 400px;
-  width: 90%;
-  margin: 20px auto 40px auto;
-  border-radius: 8px;
-}
-
-.donate-header {
-  color: #FFF;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.donate-statement-container {
-  background: #000;
-  max-width: 400px;
-  width: 90%;
-  margin: 20px auto;
-  border-radius: 8px;
-}
-
-.donate-statement-container p {
-  color: #FFF;
-  text-align: center;
-  padding: 10px 20px;
-  margin: 10px auto;
-  font-family: "Libertinus Serif Display", system-ui;
-  font-weight: normal;
-  font-size: 1rem;
-}
-
 /* Media Queries */
 /* Style Rules for Tablet Viewport */
 @media (min-width: 768px) and (max-width: 1023px) {
   /* Style Rules for Mission Statement Section */
   .mission-statement-container p {
-    font-size: 1.1rem;
-    font-weight: 300;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-
-  .donate-hero-image-container {
-    max-width: 600px;
-  }
-
-  .donate-hero-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-
-  .donate-statement-container p {
     font-size: 1.1rem;
     font-weight: 300;
     max-width: 700px;
@@ -203,34 +141,6 @@ button {
   /* Style Rules for Apparel/Accessory Header Size */
   .apparel-container h3, .accessory-container h3 {
     font-size: 1.5rem;
-  }
-
-  /* Style Rules for Donate Page */
-  .donate-header-container {
-    max-width: 600px;
-  }
-
-  .donate-header {
-    font-size: 2.5rem;
-    text-wrap: nowrap;
-  }
-
-  .donate-hero-image-container {
-    width: 75vw;
-    max-width: 900px;
-  }
-
-  .donate-hero-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-
-  .donate-statement-container p {
-    font-size: 1.25rem;
-    font-weight: 400;
-    max-width: 800px;
-    margin: 0 auto;
   }
 
   /* Style Rules for Footer Section */
