@@ -1,4 +1,13 @@
 /* Style Rules for Donate Page */
+
+/* iOS and macOS Safari-specific resets for form elements */
+fieldset, legend, label, input {
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+  -webkit-padding-end: 0;
+}
+
 .donate-hero-image-container {
   max-width: 400px;
   width: 90%;
@@ -17,6 +26,7 @@
   width: 90%;
   margin: 20px auto 40px auto;
   border-radius: 8px;
+  padding: 5px;
 }
 
 .donate-header {
@@ -74,13 +84,60 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: center;
   gap: 20px;
   background: #000;
-  border-radius: 8px;
-  padding-bottom: 15px;
-  margin: 20px auto;
-  width: 90%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Reset Safari's default fieldset/legend styles */
+.donation-selection {
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+  -webkit-padding-end: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  min-width: 0;
+}
+
+#donation-legend {
+  -webkit-margin-after: 0;
+  -webkit-margin-before: 0;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Safari flexbox alignment fix */
+.donation-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: #000;
+  width: 100%;
+}
+
+/* Safari label and input spacing fixes */
+.donation-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.donation-label input[type="radio"] {
+  margin: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
 }
 
 .donation-label {
