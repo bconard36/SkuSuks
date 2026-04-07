@@ -117,17 +117,15 @@
 .carousel-wrapper {
   position: relative;
   width: min(90vw, 400px);
+  max-width: 100%;
   margin: 0 auto;
-}
-
-.carousel-wrapper {
-  position: relative;
-  width: min(90vw, 400px);
-  margin: 0 auto;
+  padding: 0 16px;
 }
 
 .product-carousel {
+  position: relative;
   width: 100%;
+  max-width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
@@ -136,6 +134,11 @@
   padding: 10px 0;
   min-height: 20vh;
   margin: 0 auto;
+}
+
+.carousel-wrapper > .product-carousel {
+  max-width: 100%;
+  padding: 10px 0;
 }
 
 /* Hide scrollbar while keeping scroll functionality */
@@ -164,6 +167,7 @@
 
 .carousel-item {
   flex: 0 0 100%;
+  min-width: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -173,7 +177,9 @@
 }
 
 .carousel-image {
+  box-sizing: border-box;
   width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
   object-fit: contain;
@@ -196,14 +202,16 @@
   align-items: center;
   justify-content: center;
   z-index: 20;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .carousel-left-arrow {
-  left: 10px;
+  left: 0;
 }
 
 .carousel-right-arrow {
-  right: 10px;
+  right: 0;
 }
 
 .carousel-left-arrow svg,
@@ -267,6 +275,7 @@ footer p {
   /* Increase the size of the carousel image cycler */
   .carousel-wrapper {
     width: min(80vw, 700px);
+    padding: 0 20px;
   }
 
   .product-carousel {
@@ -283,9 +292,18 @@ footer p {
 @media (min-width: 1024px) {
   .carousel-wrapper {
     width: min(75vw, 900px);
+    padding: 0 24px;
   }
 
   .product-carousel {
     width: 100%;
+  }
+
+  .carousel-left-arrow {
+    left: 0;
+  }
+
+  .carousel-right-arrow {
+    right: 0;
   }
 }
