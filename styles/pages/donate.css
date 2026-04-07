@@ -145,6 +145,7 @@ fieldset, legend, label, input {
 .donation-label {
   background: #000;
   color: #FFF;
+  font-family: "Pridi", serif;
   border: 2px solid #FFF;
   padding: 10px 20px;
   width: 100px;
