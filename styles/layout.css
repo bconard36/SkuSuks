@@ -115,14 +115,14 @@
 
 /* Style Rules for Product Image Carousel */
 .product-carousel {
-  width: 300px;
+  width: min(90vw, 400px);
   overflow-x: auto;
+  overflow-y: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   padding: 10px 0;
   min-height: 20vh;
-  max-height: 50vh;
   margin: 0 auto;
 }
 
@@ -147,12 +147,12 @@
 .carousel-track {
   display: flex;
   gap: 0;
-  align-items: center;
+  align-items: stretch;
 }
 
 .carousel-item {
-  flex: 0 0 300px;
-  width: 300px;
+  flex: 0 0 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,10 +164,11 @@
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 8px;
-  padding: 10px;
+  padding: 5px;
 }
+
 
 /* Style Rules for Footer */
 footer {
@@ -222,15 +223,18 @@ footer p {
 @media (min-width: 768px) and (max-width: 1023px) {
   /* Increase the size of the carousel image cycler */
   .product-carousel {
-    width: 75vw;
-    max-width: 90vw;
+    width: min(80vw, 700px);
+  }
+
+  .carousel-item {
+    flex: 0 0 100%;
+    width: 100%;
   }
 }
 
 /* Style Rules for Desktop Viewport */
 @media (min-width: 1024px) {
   .product-carousel {
-    width: 80vw;
-    max-width: 900px;
+    width: min(75vw, 900px)
   }
 }
