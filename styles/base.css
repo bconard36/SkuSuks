@@ -98,17 +98,27 @@ button {
   padding: 10px 20px;
   font-family: "Libertinus Serif Display", system-ui;
   font-weight: normal;
+  width: 100%;
+  max-width: 100%;
+  text-wrap: balance;
+  margin: 10px auto;
 }
 
 /* Media Queries */
 /* Style Rules for Tablet Viewport */
 @media (min-width: 768px) and (max-width: 1023px) {
   /* Style Rules for Mission Statement Section */
+  .mission-statement-container {
+    width: 80vw;
+    max-width: 600px;
+  }
+
   .mission-statement-container p {
     font-size: 1.1rem;
     font-weight: 300;
-    max-width: 700px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    text-wrap: balance;
   }
 }
 
@@ -131,11 +141,17 @@ button {
   }
 
   /* Style Rules for Mission Statement Section */
+  .mission-statement-container {
+    width: 70vw;
+    max-width: 800px;
+  }
+
   .mission-statement-container p {
     font-size: 1.25rem;
     font-weight: 400;
+    width: 100%;
     max-width: 800px;
-    margin: 0 auto;
+    text-wrap: balance;
   }
 
   /* Style Rules for Apparel/Accessory Header Size */
