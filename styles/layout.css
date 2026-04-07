@@ -115,6 +115,7 @@
 
 /* Style Rules for Product Image Carousel */
 .product-carousel {
+  position: relative;
   width: min(90vw, 400px);
   overflow-x: auto;
   overflow-y: hidden;
@@ -168,6 +169,64 @@
   border-radius: 8px;
   padding: 5px;
 }
+
+/* .carousel-left-arrow, .carousel-right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 8px;
+  margin: 0 -50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+} */
+
+.carousel-left-arrow {
+  left: 10px;
+}
+
+.carousel-right-arrow {
+  right: 10px;
+}
+
+.carousel-left-arrow svg, .carousel-right-arrow svg {
+  stroke: #FFF;
+  fill: #FFF;
+}
+
+#left-arrow {
+  position: absolute;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  fill: #FFF;
+  margin-left: 10px;
+}
+
+#right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: auto;
+  fill: #FFF;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.carousel-left-arrow svg, .carousel-right-arrow svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
 
 
 /* Style Rules for Footer */

@@ -1,6 +1,7 @@
 // Initialize all page features when DOM is fully loaded 
 document.addEventListener("DOMContentLoaded", () => {
   initNavMenu();
+  initImageCycler();
   initProductModal();
   initCartBadge();
   initCartPage();
@@ -22,6 +23,34 @@ const initNavMenu = () => {
   });
 };
 
+// Image Cycler Logic for Home Page
+const initImageCycler = (callback) => {
+  const images = document.querySelectorAll(".carousel-image");
+  if (images.length === 0) return;
+
+  const makeACycler = () => {
+    let counter = 0;
+
+    function next() {
+      counter++;
+      callback(counter); // Calls function passed to counter 
+    }
+
+    function get() {
+      return counter;
+    }
+
+    let currentImageCounter;
+    const imageCycler = (images, img) => {
+      currentImageCounter = makeACycler(function(count) {
+        let index = count % images.length;
+        img.src = images[index].src; // Update image source to next in array
+      });
+
+      currentImageCounter.next(); // Start the cycle immediately
+    }
+  }
+}
 
 // Product Modal Logic for Apparel and Accessories  
 const initProductModal = () => {
