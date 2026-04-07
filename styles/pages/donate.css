@@ -43,6 +43,37 @@
   font-size: 1rem;
 }
 
+.donation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #FFF;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+/* Style Rules for Donation Radio Buttons */
+.donation-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.donation-label {
+  background: #000;
+  color: #FFF;
+  border: 2px solid #FFF;
+  padding: 10px 20px;
+  width: 100px;
+  text-align: center;
+  max-width: 100px;
+  border-radius: 4px;
+}
+
 /* Style Rules for Tablet Viewport */
 @media (min-width: 768px) and (max-width: 1023px) {
   .donate-hero-image-container {
