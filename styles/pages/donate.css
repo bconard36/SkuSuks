@@ -62,6 +62,9 @@ fieldset, legend, label, input {
   font-family: "Libertinus Serif Display", system-ui;
   font-weight: normal;
   font-size: 1rem;
+  width: 100%;
+  max-width: 100%;
+  text-wrap: balance;
 }
 
 .donation-container {
@@ -162,11 +165,16 @@ fieldset, legend, label, input {
       border-radius: 8px;
   }
 
+  .donate-statement-container {
+    width: 70vw;
+    max-width: 500px;
+  }
+
   .donate-statement-container p {
       font-size: 1.1rem;
       font-weight: 300;
       max-width: 700px;
-      margin: 0 auto;
+      text-wrap: balance;
   }
 
   #donation-legend {
@@ -197,11 +205,16 @@ fieldset, legend, label, input {
     border-radius: 8px;
   }
 
+  .donate-statement-container {
+    width: 70vw;
+    max-width: 700px;
+  }
+
   .donate-statement-container p {
     font-size: 1.25rem;
     font-weight: 400;
     max-width: 800px;
-    margin: 0 auto;
+    text-wrap: balance;
   }
 
   #donation-legend {
