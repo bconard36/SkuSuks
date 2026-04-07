@@ -218,9 +218,12 @@ footer p {
   transform-origin: center;
 }
 
-/* Style Rules for Tablet Viewpoty */
+/* Style Rules for Tablet Viewport */
 @media (min-width: 768px) and (max-width: 1023px) {
   /* Increase the size of the carousel image cycler */
+  .prpoduct-carousel {
+    width: 400px;
+  }
 }
 
 /* Style Rules for Desktop Viewport */
