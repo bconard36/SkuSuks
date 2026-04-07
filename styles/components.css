@@ -92,7 +92,7 @@
 }
 
 .donate-button-container {
-  min-height: 100vh;
+  min-height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
