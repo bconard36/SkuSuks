@@ -222,7 +222,8 @@ footer p {
 @media (min-width: 768px) and (max-width: 1023px) {
   /* Increase the size of the carousel image cycler */
   .prpoduct-carousel {
-    width: 400px;
+    width: 75vw;
+    max-width: 90vw;
   }
 }
 
