@@ -105,7 +105,7 @@ button {
   background: #000;
   max-width: 400px;
   width: 90%;
-  margin: 0 auto;
+  margin: 20px auto 40px auto;
   border-radius: 8px;
 }
 
@@ -127,6 +127,7 @@ button {
   color: #FFF;
   text-align: center;
   padding: 10px 20px;
+  margin: 10px auto;
   font-family: "Libertinus Serif Display", system-ui;
   font-weight: normal;
 }
