@@ -24,32 +24,40 @@ const initNavMenu = () => {
 };
 
 // Image Cycler Logic for Home Page
-const initImageCycler = (callback) => {
-  const images = document.querySelectorAll(".carousel-image");
-  if (images.length === 0) return;
+const initImageCycler = () => {
+  // Get carousel elements needed for image cycling
+  const carousel = document.querySelector(".product-carousel")
+  const leftArrow = document.getElementById("left-arrow");
+  const rightArrow = document.getElementById("right-arrow");
+  const carouselItems = document.querySelectorAll(".carousel-item");
 
-  const makeACycler = () => {
-    let counter = 0;
+  if (!carousel || !leftArrow || !rightArrow || carouselItems.length === 0) return;
 
-    function next() {
-      counter++;
-      callback(counter); // Calls function passed to counter 
-    }
-
-    function get() {
-      return counter;
-    }
-
-    let currentImageCounter;
-    const imageCycler = (images, img) => {
-      currentImageCounter = makeACycler(function(count) {
-        let index = count % images.length;
-        img.src = images[index].src; // Update image source to next in array
-      });
-
-      currentImageCounter.next(); // Start the cycle immediately
-    }
+  // Track the current image
+  let currentIndex = 0;
+  
+  // Scroll Functions 
+  const scrollToImage = (index) => {
+    carouselItems[index].scrollIntoView({
+      behavior: "smooth", 
+      block: "nearest", 
+      inline: "center"
+    })
   }
+
+  const goToNext = () => {
+    currentIndex = (currentIndex + 1) % carouselItems.length;
+    scrollToImage(currentIndex);
+  }
+
+  const goPrev = () => {
+    currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+    scrollToImage(currentIndex);
+  }
+
+  leftArrow.addEventListener('click', goPrev);
+  rightArrow.addEventListener('click', goToNext);
+
 }
 
 // Product Modal Logic for Apparel and Accessories  
