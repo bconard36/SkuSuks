@@ -72,35 +72,36 @@
         <h1 id="contact-header">CONTACT US</h1>
       </div>
 
-      <form class="contact-form">
+      <div class="contact-form-container">
+        <form class="contact-form">
+          <fieldset id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="First and Last Name" required>
+            </div>
 
-        <fieldset id="contact-form">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="First and Last Name" required>
-          </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="(555) 555-5555" required>
+            </div>
 
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" placeholder="(555) 555-5555" required>
-          </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="johndoe@gmail.com" required>
+            </div>
 
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="text" id="email" placeholder="johndoe@gmail.com" required>
-          </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" cols="30" placeholder="Type your message here..." required></textarea>
+            </div>
 
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" rows="5" cols="30" placeholder="Type your message here..." required></textarea>
-          </div>
+            <button id="submit" value="Submit">Submit</button>
 
-          <button id="submit" value="Submit">Submit</button>
-
-          <img src="images/alternate_skusucks_logo.png" alt="A SkuSuks alternate logo" id="form-graphic">
-        </fieldset>
-
-      </form>
+            <img src="images/alternate_skusucks_logo.png" alt="A SkuSuks alternate logo" id="form-graphic">
+          </fieldset>
+        </form>
+      </div>
+      
     </main>
 
     <footer>

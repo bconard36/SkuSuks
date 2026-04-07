@@ -4,6 +4,15 @@
   text-align: center;
 }
 
+.contact-form-container {
+  background: #000;
+  width: 90%;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 8px;
+  padding: 20px;
+}
+
 .contact-header-container {
   background: #000;
   width: 50%;
@@ -13,8 +22,29 @@
 #form-graphic {
   display: block;
   margin: 20px auto 0 auto;
-  max-width: 80%;
+  width: 90%;
+  max-width: 400px;
   height: auto;
   border-radius: 8px;
   padding-bottom: 20px;
+}
+
+/* Style Rules for Tablet Viewport */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact-form-container {
+    width: 90%;
+    max-width: 600px;
+  }
+
+  #form-graphic {
+    max-width: 60%;
+  }
+}
+
+/* Style Rules for Desktop Viewport */
+@media (min-width: 1024px) {
+  .contact-form-container {
+    width: 70%;
+    max-width: 700px;
+  }
 }
