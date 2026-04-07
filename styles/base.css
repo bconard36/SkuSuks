@@ -100,63 +100,6 @@ button {
   font-weight: normal;
 }
 
-/* Style Rules for Product Image Carousel */
-.product-carousel {
-  width: 300px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  padding: 10px 0;
-  min-height: 20vh;
-  max-height: 50vh;
-  margin: 0 auto;
-}
-
-/* Hide scrollbar while keeping scroll functionality */
-.product-carousel::-webkit-scrollbar {
-  height: 4px;
-}
-
-.product-carousel::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.product-carousel::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
-}
-
-.product-carousel::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-.carousel-track {
-  display: flex;
-  gap: 0;
-  align-items: center;
-}
-
-.carousel-item {
-  flex: 0 0 300px;
-  width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-}
-
-.carousel-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  border-radius: 8px;
-  padding: 10px;
-}
-
-
 /* Media Queries */
 /* Style Rules for Tablet Viewport */
 @media (min-width: 768px) and (max-width: 1023px) {
