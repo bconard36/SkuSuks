@@ -91,7 +91,7 @@ button {
 }
 
 .mission-statement-container p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 300;
   color: #FFF;
   text-align: center;
@@ -142,6 +142,7 @@ button {
   margin: 10px auto;
   font-family: "Libertinus Serif Display", system-ui;
   font-weight: normal;
+  font-size: 1rem;
 }
 
 /* Media Queries */
