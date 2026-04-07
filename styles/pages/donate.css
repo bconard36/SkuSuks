@@ -88,7 +88,8 @@ fieldset, legend, label, input {
   background: #000;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding-bottom: 20px;
+  margin: 10px auto;
   border: none;
 }
 
@@ -98,8 +99,6 @@ fieldset, legend, label, input {
   -webkit-margin-end: 0;
   -webkit-padding-start: 0;
   -webkit-padding-end: 0;
-  margin: 0;
-  padding: 0;
   border: none;
   min-width: 0;
 }
