@@ -163,11 +163,13 @@
   right: 5px;
   background: #F00;
   color: #FFF;
-  font-size: 0.75rem;
   border-radius: 50%;
-  padding: 3px 6px;
   min-width: 18px;
   text-align: center;
+  font-size: 1rem;
+  color: #FFF;
+  padding: 2px;
+  margin-bottom: 10px;
 }
 
 /* Forms */

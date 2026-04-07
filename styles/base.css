@@ -100,6 +100,37 @@ button {
   font-weight: normal;
 }
 
+/* Style Rules for Donate Page */
+.donate-header-container {
+  background: #000;
+  max-width: 400px;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.donate-header {
+  color: #FFF;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.donate-statement-container {
+  background: #000;
+  max-width: 400px;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+.donate-statement-container p {
+  color: #FFF;
+  text-align: center;
+  padding: 10px 20px;
+  font-family: "Libertinus Serif Display", system-ui;
+  font-weight: normal;
+}
+
 /* Media Queries */
 /* Style Rules for Tablet Viewport */
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -138,9 +169,19 @@ button {
     margin: 0 auto;
   }
 
-  /* Style Rules for Apparel/Accessories */
+  /* Style Rules for Apparel/Accessory Header Size */
   .apparel-container h3, .accessory-container h3 {
     font-size: 1.5rem;
+  }
+
+  /* Style Rules for Donate Page */
+  .donate-header-container {
+    max-width: 600px;
+  }
+
+  .donate-header {
+    font-size: 2.5rem;
+    text-wrap: nowrap;
   }
 
   /* Style Rules for Footer Section */
