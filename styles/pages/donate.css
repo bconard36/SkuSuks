@@ -151,4 +151,17 @@
   #donation-legend {
     font-size: 1.5rem;
   }
+
+  .donation-selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .donation-container {
+    width: 75vw;
+    max-width: 900px;
+  }
 }
