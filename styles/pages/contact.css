@@ -7,7 +7,7 @@
 .contact-form-container {
   background: #000;
   width: 90%;
-  width: 90%;
+  max-width: 500px;
   margin: 20px auto;
   border-radius: 8px;
   padding: 20px;
