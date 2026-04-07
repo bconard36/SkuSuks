@@ -188,7 +188,8 @@
 }
 
 /* Carousel arrow controls */
-.carousel-left-arrow,
+/* HIDE ON MOBILE AND TABLET VIEWPORTS! */
+/* .carousel-left-arrow,
 .carousel-right-arrow {
   position: absolute;
   top: 50%;
@@ -212,13 +213,13 @@
 
 .carousel-right-arrow {
   right: 0;
-}
+} */
 
-.carousel-left-arrow svg,
+/* .carousel-left-arrow svg,
 .carousel-right-arrow svg {
   stroke: #FFF;
   fill: #FFF;
-}
+} */
 
 /* Style Rules for Footer */
 footer {
@@ -296,6 +297,37 @@ footer p {
 
   .product-carousel {
     width: 100%;
+  }
+
+  .carousel-left-arrow,
+  .carousel-right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    opacity: 0.15;
+    transition: opacity 0.2s ease;
+  }
+
+  .carousel-wrapper:hover .carousel-left-arrow,
+  .carousel-wrapper:hover .carousel-right-arrow {
+    opacity: 1;
+  }
+
+  .carousel-left-arrow svg,
+  .carousel-right-arrow svg {
+    stroke: #FFF;
+    fill: #FFF;
   }
 
   .carousel-left-arrow {
