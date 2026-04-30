@@ -30,8 +30,10 @@ const initImageCycler = () => {
   const leftArrow = document.getElementById("left-arrow");
   const rightArrow = document.getElementById("right-arrow");
   const carouselItems = document.querySelectorAll(".carousel-item");
+  const preOrderLeftArrow = document.getElementById("preorder-left-arrow");
+  const preOrderRightArrow = document.getElementById("preorder-right-arrow");
 
-  if (!carousel || !leftArrow || !rightArrow || carouselItems.length === 0) return;
+  if (!carousel || !leftArrow || !rightArrow || carouselItems.length === 0 || !preOrderLeftArrow || !preOrderRightArrow) return;
 
   // Track the current image
   let currentIndex = 0;
@@ -59,6 +61,8 @@ const initImageCycler = () => {
 
   leftArrow.addEventListener('click', goPrev);
   rightArrow.addEventListener('click', goToNext);
+  preOrderLeftArrow.addEventListener('click', goPrev)
+  preOrderRightArrow.addEventListener('click', goToNext);
 
 }
 
