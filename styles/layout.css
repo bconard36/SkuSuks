@@ -113,16 +113,46 @@
   border-radius: 4px;
 }
 
-/* Style Rules for Product Image Carousel */
+/* Style Rules for Image Carousel */
 .carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   position: relative;
-  width: min(90vw, 400px);
-  max-width: 100%;
+  max-width: 500px;
+  width: 70vw;
+  height: auto;
   margin: 0 auto;
-  padding: 0 16px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
-.product-carousel {
+.cycler-btn {
+  cursor: pointer;
+  color: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+  border: none;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.next-btn {
+  position: relative;
+  right: 12.5px;
+  display: none;
+}
+
+.prev-btn {
+  position: relative;
+  left: 12.5px;
+  z-index: 5;
+  display: none;
+}
+
+/* .product-carousel {
   position: relative;
   width: 100%;
   max-width: 100%;
@@ -134,92 +164,59 @@
   padding: 10px 0;
   min-height: 20vh;
   margin: 0 auto;
-}
-
-.carousel-wrapper > .product-carousel {
-  max-width: 100%;
-  padding: 10px 0;
-}
+} */
 
 /* Hide scrollbar while keeping scroll functionality */
-.product-carousel::-webkit-scrollbar {
+.carousel-wrapper::-webkit-scrollbar {
   height: 4px;
 }
 
-.product-carousel::-webkit-scrollbar-track {
+.carousel-wrapper::-webkit-scrollbar-track {
   background: transparent;
 }
 
-.product-carousel::-webkit-scrollbar-thumb {
+.carousel-wrapper::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 10px;
 }
 
-.product-carousel::-webkit-scrollbar-thumb:hover {
+.carousel-wrapper::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
-.carousel-track {
+.cycler-images {
   display: flex;
-  gap: 0;
-  align-items: stretch;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
 }
 
-.carousel-item {
-  flex: 0 0 100%;
-  min-width: 100%;
+.cycler-images img {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-}
-
-.carousel-image {
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 100%;
-  height: 500px;
-  display: block;
-  object-fit: contain;
+  height: auto;
+  display: none;
   border-radius: 8px;
-  padding: 5px;
 }
 
-/* Carousel arrow controls */
-/* HIDE ON MOBILE AND TABLET VIEWPORTS! */
-/* .carousel-left-arrow,
-.carousel-right-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  width: 42px;
-  height: 42px;
-  cursor: pointer;
+.cycler-images img.active {
+  display: block;
+}
+
+/* Style Rules for Product Carousel */
+.product-carousel-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 20;
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
+  gap: 5px;
+  position: relative;
+  max-width: 250px;
+  width: 40vw;
+  height: auto;
+  margin: 0 auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
-
-.carousel-left-arrow {
-  left: 0;
-}
-
-.carousel-right-arrow {
-  right: 0;
-} */
-
-/* .carousel-left-arrow svg,
-.carousel-right-arrow svg {
-  stroke: #FFF;
-  fill: #FFF;
-} */
 
 /* Style Rules for Footer */
 footer {
@@ -274,67 +271,36 @@ footer p {
 @media (min-width: 768px) and (max-width: 1023px) {
   /* Increase the size of the carousel image cycler */
   .carousel-wrapper {
-    width: min(80vw, 700px);
+    width: 80vw;
+    max-width: 600px;
     padding: 0 20px;
   }
 
-  .product-carousel {
-    width: 100%;
+  .product-carousel-wrapper {
+    max-width: 400px;
+    width: 50vw;
   }
 
-  .carousel-item {
-    flex: 0 0 100%;
-    width: 100%;
+  .prev-btn, .next-btn {
+    display: inline;
   }
 }
 
 /* Style Rules for Desktop Viewport */
 @media (min-width: 1024px) {
   .carousel-wrapper {
-    width: min(75vw, 900px);
-    padding: 0 24px;
+    width: 90vw;
+    max-width: 900px;
+    margin: 20px auto;
   }
 
-  .product-carousel {
-    width: 100%;
+  .product-carousel-wrapper {
+    max-width: 800px;
+    width: 70vw;
   }
 
-  .carousel-left-arrow,
-  .carousel-right-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    width: 42px;
-    height: 42px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 20;
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
-    opacity: 0.15;
-    transition: opacity 0.2s ease;
+  .prev-btn, .next-btn {
+    display: inline;
   }
 
-  .carousel-wrapper:hover .carousel-left-arrow,
-  .carousel-wrapper:hover .carousel-right-arrow {
-    opacity: 1;
-  }
-
-  .carousel-left-arrow svg,
-  .carousel-right-arrow svg {
-    stroke: #FFF;
-    fill: #FFF;
-  }
-
-  .carousel-left-arrow {
-    left: 0;
-  }
-
-  .carousel-right-arrow {
-    right: 0;
-  }
 }
