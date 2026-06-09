@@ -124,8 +124,8 @@
 }
 
 #modal-product-image {
-  height: 100px;
-  width: 100px;
+  height: 100%;
+  width: 100%;
   background-color: #dfdfe2;
   margin-bottom: 40px;
 }
