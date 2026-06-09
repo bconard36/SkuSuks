@@ -27,17 +27,21 @@ const initNavMenu = () => {
 const initImageCycler = () => {
   // Get carousel elements needed for image cycling
   const carousel = document.querySelectorAll(".product-carousel");
-  const leftArrowHome = document.getElementById("left-arrow");
-  const rightArrowHome = document.getElementById("right-arrow");
-  const leftArrowNewDrop = document.getElementById("new-drop-left-arrow");
-  const rightArrowNewDrop = document.getElementById("new-drop-right-arrow");
+  const carouselLeftArrow = document.querySelectorAll(".carousel-left-arrow");
+  const carouselRightArrow = document.querySelectorAll(".carousel-right-arrow");
+  // const leftArrowHome = document.getElementById("left-arrow");
+  // const rightArrowHome = document.getElementById("right-arrow");
+  // const leftArrowNewDrop = document.getElementById("new-drop-left-arrow");
+  // const rightArrowNewDrop = document.getElementById("new-drop-right-arrow");
   const carouselItems = document.querySelectorAll(".carousel-item");
-  const preOrderLeftArrow = document.getElementById("preorder-left-arrow");
-  const preOrderRightArrow = document.getElementById("preorder-right-arrow");
+  // const preOrderLeftArrow = document.getElementById("preorder-left-arrow");
+  // const preOrderRightArrow = document.getElementById("preorder-right-arrow");
 
-  if (!carousel || !leftArrowHome || !rightArrowHome 
-    || !leftArrowNewDrop || !rightArrowNewDrop
-    || !preOrderLeftArrow || !preOrderRightArrow || carouselItems.length === 0) return;
+  // if (!carousel || !leftArrowHome || !rightArrowHome 
+  //   || !leftArrowNewDrop || !rightArrowNewDrop
+  //   || !preOrderLeftArrow || !preOrderRightArrow || carouselItems.length === 0) return;
+
+  if (!carousel || !carouselLeftArrow || !carouselRightArrow || carouselItems.length === 0) return;
 
   // Track the current image
   let currentIndex = 0;
@@ -63,12 +67,14 @@ const initImageCycler = () => {
     scrollToImage(currentIndex);
   }
 
-  leftArrowHome.addEventListener('click', goPrev);
-  rightArrowHome.addEventListener('click', goToNext);
-  leftArrowNewDrop.addEventListener('click', goPrev);
-  rightArrowNewDrop.addEventListener('click', goToNext);
-  preOrderLeftArrow.addEventListener('click', goPrev)
-  preOrderRightArrow.addEventListener('click', goToNext);
+  // leftArrowHome.addEventListener('click', goPrev);
+  // rightArrowHome.addEventListener('click', goToNext);
+  // leftArrowNewDrop.addEventListener('click', goPrev);
+  // rightArrowNewDrop.addEventListener('click', goToNext);
+  // preOrderLeftArrow.addEventListener('click', goPrev)
+  // preOrderRightArrow.addEventListener('click', goToNext);
+  carouselLeftArrow.addEventListener('click', goPrev);
+  carouselRightArrow.addEventListener('click', goToNext);
 
 }
 
