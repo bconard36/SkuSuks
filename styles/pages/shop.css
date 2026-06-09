@@ -43,12 +43,6 @@
   border-radius: 8px;
 }
 
-#modal-product-image {
-  width: 90%;
-  height: 90%;
-  padding: 10px; 
-}
-
 /* Style Rules for Tablet Viewport */
 @media (min-width: 768px) {
   .apparel-container, .accessory-container {
