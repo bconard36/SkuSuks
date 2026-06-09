@@ -142,14 +142,12 @@
 .next-btn {
   position: relative;
   right: 12.5px;
-  display: none;
 }
 
 .prev-btn {
   position: relative;
   left: 12.5px;
   z-index: 5;
-  display: none;
 }
 
 /* .product-carousel {
