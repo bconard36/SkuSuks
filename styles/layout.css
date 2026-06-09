@@ -295,8 +295,8 @@ footer p {
   }
 
   .product-carousel-wrapper {
-    max-width: 800px;
-    width: 70vw;
+    max-width: 500px;
+    width: 50vw;
   }
 
   .prev-btn, .next-btn {
