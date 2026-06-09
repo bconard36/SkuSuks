@@ -26,14 +26,18 @@ const initNavMenu = () => {
 // Image Cycler Logic for Home Page
 const initImageCycler = () => {
   // Get carousel elements needed for image cycling
-  const carousel = document.querySelector(".product-carousel")
-  const leftArrow = document.getElementById("left-arrow");
-  const rightArrow = document.getElementById("right-arrow");
+  const carousel = document.querySelectorAll(".product-carousel");
+  const leftArrowHome = document.getElementById("left-arrow");
+  const rightArrowHome = document.getElementById("right-arrow");
+  const leftArrowNewDrop = document.getElementById("new-drop-left-arrow");
+  const rightArrowNewDrop = document.getElementById("new-drop-right-arrow");
   const carouselItems = document.querySelectorAll(".carousel-item");
   const preOrderLeftArrow = document.getElementById("preorder-left-arrow");
   const preOrderRightArrow = document.getElementById("preorder-right-arrow");
 
-  if (!carousel || !leftArrow || !rightArrow || carouselItems.length === 0 || !preOrderLeftArrow || !preOrderRightArrow) return;
+  if (!carousel || !leftArrowHome || !rightArrowHome 
+    || !leftArrowNewDrop || !rightArrowNewDrop
+    || !preOrderLeftArrow || !preOrderRightArrow || carouselItems.length === 0) return;
 
   // Track the current image
   let currentIndex = 0;
@@ -59,8 +63,10 @@ const initImageCycler = () => {
     scrollToImage(currentIndex);
   }
 
-  leftArrow.addEventListener('click', goPrev);
-  rightArrow.addEventListener('click', goToNext);
+  leftArrowHome.addEventListener('click', goPrev);
+  rightArrowHome.addEventListener('click', goToNext);
+  leftArrowNewDrop.addEventListener('click', goPrev);
+  rightArrowNewDrop.addEventListener('click', goToNext);
   preOrderLeftArrow.addEventListener('click', goPrev)
   preOrderRightArrow.addEventListener('click', goToNext);
 
