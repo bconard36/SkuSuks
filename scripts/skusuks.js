@@ -31,7 +31,7 @@ const initImageCycler = () => {
   const rightArrowHome = document.getElementById("right-arrow");
   const leftArrowNewDrop = document.getElementById("new-drop-left-arrow");
   const rightArrowNewDrop = document.getElementById("new-drop-right-arrow");
-  const carouselItems = document.querySelector(".carousel-item");
+  const carouselItems = document.querySelectorAll(".carousel-item");
   const preOrderLeftArrow = document.getElementById("preorder-left-arrow");
   const preOrderRightArrow = document.getElementById("preorder-right-arrow");
 
